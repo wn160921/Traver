@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner"
+            android:entries="@array/fenlei"
+            >
+        </Spinner>
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"/>
+
+        <ImageView
+            android:id="@+id/ima1"
+            android:layout_width="400dp"
+            android:layout_height="225dp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tianjia" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ima2"
+            android:src="@drawable/tianjia"
+            android:scaleType="centerCrop"
+            android:layout_width="400dp"
+            android:layout_height="225dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ima3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tianjia"
+            android:layout_width="400dp"
+            android:layout_height="225dp" />
+        <Button
+            android:text="编辑完成"
+            android:id="@+id/bianjiwanchen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

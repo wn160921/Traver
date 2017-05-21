@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.traver.zong_package.Zong_detailActivity">
+        <LinearLayout
+            android:background="@color/mylv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginLeft="-10dp"
+                android:id="@+id/fanhui_dz"
+                android:layout_gravity="center"
+                android:background="@drawable/fan_biao"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/biaoti_dz"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/ditu_dz"
+                android:background="@drawable/tiaozhuan"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="225dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpzong"
+                android:layout_width="match_parent"
+                android:layout_height="225dp">
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:id="@+id/zhishiqi"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_selector"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_selector"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_selector"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/jutineirong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/zanshu_zong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_toLeftOf="@id/zanshu_zong"
+                android:id="@+id/zan_dt"
+                android:background="@drawable/zan_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_dz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</ScrollView>

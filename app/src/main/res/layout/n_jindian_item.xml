@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:background="#e3f2fd">
+    <ImageView
+        android:id="@+id/jindianlog"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:text="这是名字"
+        android:textSize="36sp"
+        android:id="@+id/jingdian_name"
+        android:layout_toRightOf="@id/jindianlog"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="这是地点"
+        android:textSize="36sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/jingdian_weizhi"
+        android:layout_toRightOf="@id/jindianlog"
+        android:layout_below="@id/jingdian_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

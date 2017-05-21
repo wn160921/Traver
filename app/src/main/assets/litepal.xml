@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="travel"></dbname>
+    <version value="3"></version>
+    <list>
+        <mapping class="com.example.traver.shujubiao.Lunbotu"></mapping>
+        <mapping class="com.example.traver.shujubiao.Banben"></mapping>
+        <mapping class="com.example.traver.shujubiao.yonghu"></mapping>
+        <mapping class="com.example.traver.shuo_shuo.Shuo"></mapping>
+        <mapping class="com.example.traver.fuping_fragment.NFJingdian"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.traver.zhiyuangongyi.zhiyuan.PinglunActivity">
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/fapinglunprbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@color/mylv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_text"
+            android:text="名字"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/fabtn"
+            android:text="发表"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/pinglun_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
